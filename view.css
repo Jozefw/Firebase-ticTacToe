@@ -1,0 +1,188 @@
+body {
+  background-image: url("brushed.png");
+}
+
+#head {
+  padding: 2px;
+  background-image: url("border.png");
+  background-repeat: repeat-x;
+  border-bottom: black solid 2px;
+
+}
+
+#top{
+  margin: 0px;
+  padding: 20px;
+  background-color: #443266;
+  width: 100%;
+  text-shadow: 0px 2px 3px #392859;
+  color: #5C4B7D;
+  font-size: 50px;
+  font-family: impact;
+  text-align: center;
+}
+
+#bottom{
+  margin: 0px;
+  background-color: #443266;
+  width: 100%;
+  text-shadow: 0px 1px 2px #4d4d4d;
+  color: #222;
+  padding: 50px;
+
+}
+
+p{
+  background-color: #443266;
+  width: 100%;
+  text-shadow: 0px 2px 3px #392859;
+  color: #5C4B7D;
+  font-size: 22px;
+  font-family: impact;
+  text-align: center;
+}
+
+#container{
+  width: 50%;
+  padding: 20px;
+  display: inline-block;
+}
+td {
+  border: 2.5px solid #8C489F;
+  height: 50px;
+  width: 50px;
+  opacity: .5;
+}
+
+#nextMove{
+  /*position: absolute;*/
+  display: none;  
+  left: 200px;  
+  top: 130px;
+  border: 1px solid #ddd;
+  height: 30px;
+  width: 75px;
+  text-align: center;
+  padding: 15px 11px 11px 11px;
+  border-radius: 4px;
+  font-family: helvetica;
+  color: #443266;
+  background: #e8c4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0));
+  background: -moz-linear-gradient(#e8c4e4, #d698d0);
+  background: linear-gradient(#e8c4e4, #d698d0);
+  border: solid 1px #da9fd4;
+  border-bottom: solid 3px #946890;
+  box-shadow: inset 0 0 0 1px #f2dcef;
+  color: #7b5777;
+  text-shadow: 0 1px 0 #eacae6;
+  
+}
+
+#nextMove:hover{
+  background: #daa2d4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db));
+  background: -moz-linear-gradient(#daa2d4, #e0b1db);
+  background: linear-gradient(#daa2d4, #e0b1db);
+  border: solid 1px #ca91c4;
+  border-bottom: solid 3px #946890;
+  box-shadow: inset 0 0 0 1px #e9c7e6;
+
+}
+
+#nextMove:active{
+  background: #daa2d4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db));
+  background: -moz-linear-gradient(#daa2d4, #e0b1db);
+  background: linear-gradient(#daa2d4, #e0b1db);
+  border: solid 1px #ca91c4;
+  border-bottom: solid 3px #946890;
+  box-shadow: inset 0 0 0 1px #e9c7e6;
+
+}
+
+#gameSelect{
+  /*display: inline-block;*/
+}
+
+#choice {
+  color: #34495e;
+  left: 200px;
+  top: 40px;
+  line-height: 1.5em;
+  font-size: 12px;
+  font-family: 'Arial Black';
+ 
+}
+
+#pickedGame{
+  display: inline-block;
+}
+
+table {
+ /* margin-top: 20px;*/
+  display: inline-block;
+}
+
+#liveGame {
+  display : none;
+}
+
+#liveTable{
+  display: inline-block;
+}
+
+#liveGameIndicator {
+ /* position: absolute;*/
+  display: none;
+  left: 200px;
+  top: 230px;
+  width: 80px;
+  height: 24px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  font-family: helvetica;
+  font-size: 1em;
+  text-align: center;
+  color: #333;
+  padding: 11px;
+  background: #e8c4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0));
+  background: -moz-linear-gradient(#e8c4e4, #d698d0);
+  background: linear-gradient(#e8c4e4, #d698d0);
+  border: solid 1px #da9fd4;
+  border-bottom: solid 3px #946890;
+  box-shadow: inset 0 0 0 1px #f2dcef;
+  color: #7b5777;
+  text-shadow: 0 1px 0 #eacae6;
+}
+
+#liveGameIndicator:hover {
+  background: #daa2d4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db));
+  background: -moz-linear-gradient(#daa2d4, #e0b1db);
+  background: linear-gradient(#daa2d4, #e0b1db);
+  border: solid 1px #ca91c4;
+  border-bottom: solid 3px #946890;
+  box-shadow: inset 0 0 0 1px #e9c7e6;
+}
+
+#liveGameIndicator:hover {
+  background: #d49ace;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6));
+  background: -moz-linear-gradient(#d49ace, #cc94c6);
+  background: linear-gradient(#d49ace, #cc94c6);
+  border: solid 1px #8e678a;
+  box-shadow: inset 0 10px 15px 0 #ba87b5;
+  }
+
+
+/* attach this class to an element to make it unselectable */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
